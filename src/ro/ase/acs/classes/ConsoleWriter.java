@@ -5,7 +5,7 @@ import ro.ase.acs.interfaces.DataWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class ConsoleDataWriter implements DataWriter {
+public class ConsoleWriter implements DataWriter {
     @Override
     public void displayResult(ResultSet resultSet) throws SQLException {
         while(resultSet.next()) {

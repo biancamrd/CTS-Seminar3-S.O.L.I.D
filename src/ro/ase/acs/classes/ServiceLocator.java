@@ -3,7 +3,6 @@ package ro.ase.acs.classes;
 import ro.ase.acs.interfaces.*;
 
 import java.lang.reflect.Type;
-import java.time.temporal.ValueRange;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +13,7 @@ public class ServiceLocator {
         map.put(DatabaseConnection.class, new ConnectionCreator());
         map.put(TableBuilder.class, new TableCreator());
         map.put(DataReader.class, new DatabaseDataReader());
-        map.put(DataWriter.class, new ConsoleDataWriter());
+        map.put(DataWriter.class, new ConsoleWriter());
         map.put(DataStorage.class, new DataInserter());
     }
 
