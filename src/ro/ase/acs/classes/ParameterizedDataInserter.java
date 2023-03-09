@@ -17,7 +17,5 @@ public class ParameterizedDataInserter extends DataInserter{
         preparedStatement.setDouble(4, 4500);
         preparedStatement.executeUpdate();
         preparedStatement.close();
-
-        connection.commit();
     }
 }

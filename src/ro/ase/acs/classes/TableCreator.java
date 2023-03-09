@@ -16,6 +16,5 @@ public class TableCreator implements TableBuilder {
         statement.executeUpdate(sqlDrop);
         statement.executeUpdate(sqlCreate);
         statement.close();
-        connection.commit();
     }
 }
