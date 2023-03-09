@@ -13,7 +13,7 @@ public class ServiceLocator {
         map.put(DatabaseConnection.class, new ConnectionCreator());
         map.put(TableBuilder.class, new TableCreator());
         map.put(DataReader.class, new DatabaseDataReader());
-        map.put(DataWriter.class, new ConsoleDataWriter());
+        map.put(DataWriter.class, new ConsoleWriter());
         map.put(DataStorage.class, new DataInserter());
     }
 
